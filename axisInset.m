@@ -67,25 +67,3 @@ end
 
 insetPos = [left bottom scale.*pos(3:4)];
 h = axes(get(ax,'parent'),'position',insetPos);
-
-% fig1 = figure;
-% 
-% % make some weird axes
-% ax1 = subplot(3,3,[1 2 4 5]); 
-% plot(1:5, [5 3 4 2 1],'r')
-% 
-% ax2 = subplot(3,3,3);
-% plot(1:100, sin((1:100)/20))
-% 
-% % make an inset in each axis
-% pos = get(ax1,'position'); % [left bottom width height]
-% % be nice to specify 'NW','SW' etc. or some kind of simple proportional
-% % scaling
-% scale = 0.3; % size relative to parent axis
-% buffer = 0.05; % border size relative to parent axis
-% insetPos = [pos(1:2)+(1-buffer-scale)*pos(3:4) scale*pos(3:4)];
-% axIn1 = axes(get(ax1,'parent'),'position',insetPos);
-% plot(1:100, sin((1:100)/20))
-% 
-% 
-% 
